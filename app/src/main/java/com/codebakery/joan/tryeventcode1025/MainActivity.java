@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /*
     * 부모의 부모 클래스인 FragmentActivity의 메서드 오버라이드
     * MainActivity->AppCompatActivity->FragmentActivity->Activity 를 상속
+    * ResultActivity에 갔다가 결과값(인텐트) 들고 다시 이 화면으로 돌아오면 호출되는 메서드.
     * */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
