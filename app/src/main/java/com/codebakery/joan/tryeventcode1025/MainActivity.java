@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         /*
         * activity_main.xml을 화면에 띄움.
-        * 지금부터 사용자는 보이는 화면에 보이는 버튼을 누를수 있음.
+        * 지금부터 사용자는 화면에 보이는 버튼을 누를수 있음.
         * 즉, 버튼의 이벤트 핸들러(=리스너)를 이 메서드(onCreate)에 등록하고 이벤트를 기다려야함.
         * */
         setContentView(R.layout.activity_main);
