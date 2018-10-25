@@ -18,9 +18,12 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        str = getIntent().getStringExtra("buttonText");
+        // if (getIntent() != null) str = getIntent().getStringExtra("buttonText")
+        // else str = "getIntent() is null";
+        str = getIntent() != null ? getIntent().getStringExtra("buttonText") : "getIntent() is null";
+
         editText = (EditText) findViewById(R.id.editText);
-        editText.setText(str);
+        editText.setText(str + " 버튼이 롱클릭됨.");
         resultButton = (Button) findViewById(R.id.result_button);
         resultButton.setOnClickListener(this);
     }
