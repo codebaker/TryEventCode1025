@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView = (TextView) findViewById(R.id.text1);
 
         /*
-        * 버튼을 짧게 클릭 했을때,
+        * 버튼을 짧게 클릭 했을때, 
         * this를 파라미터로 넘긴것은 여기-MainActivity Class-에 View.OnClickListener.onClick(View v)가 구현되어 있기때문에.
         * 즉 this는 MainActivity 클래스 이지만,
          * View.OnClickListener 클래스 이기도 함.
